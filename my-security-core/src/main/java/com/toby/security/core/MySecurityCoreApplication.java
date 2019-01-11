@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 
- * 
  * @author Toby.li
  */
 @SpringBootApplication
