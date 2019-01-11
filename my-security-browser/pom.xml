@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>my-security-browser</artifactId>
+	<packaging>jar</packaging>
+
+	<name>my-security-browser</name>
+	<description>给浏览器项目用的</description>
+
+	<parent>
+		<groupId>com.toby.security</groupId>
+		<artifactId>my-security</artifactId>
+		<version>0.1</version>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.toby.security</groupId>
+			<artifactId>my-security-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-core</artifactId>
+		</dependency>
+	</dependencies>
+</project>

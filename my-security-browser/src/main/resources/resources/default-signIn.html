@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+</head>
+<body>
+	<h1>登录页面</h1>
+	<h2>默认登录</h2>
+	<form action="/authentication/form" method="post">
+		用户名：<input type="text" name="username"> <br>
+		密码：<input type="password" name="password"> <br>
+		验证码：<input type="text" name="imageCode"> <img src="/code/image"> <br>
+		<input type="checkbox" name="remember-me">记住我 <br>
+		<input type="submit" value="提交" />
+	</form>
+	
+	<h2>短信登录</h2>
+	<form action="/authentication/mobile" method="post">
+		手机号：<input type="text" name="mobile" value="1881234556"> <br>
+		短信验证码：<input type="text" name="smsCode"> <a href="/code/sms?mobile=1881234556">发送短信验证码</a> <br>
+		<input type="submit" value="提交" />
+	</form>
+</body>
+</html>
