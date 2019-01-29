@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Created: 2019年1月17日
  */
 public class QQImpl extends AbstractOAuth2ApiBinding implements QQ {
-	//access_token是协议流程前5步拿到的令牌，这里父类来执行前5步并拿到令牌了，所以不需要自己去拿
+	//access_token是协议流程前5步拿到的令牌，这里父类来执行前5步并拿到令牌了，所以不需要自己去拿这些
 	private static final String URL_GET_OPENID = "https://graph.qq.com/oauth2.0/me?access_token=%s";
 	
 	//父类里面会自动将access_token参数挂到getuserinfo的url后面，所以这里可以删掉access_token参数（qq官方是有，这里父类提供了）
