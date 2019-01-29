@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
+ * QQ接口的实现类
  * @author Randy
  * Created: 2019年1月17日
  */
