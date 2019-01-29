@@ -2,6 +2,7 @@ package com.toby.security.core.social.qq.api;
 
 /**
  * 封装QQ获取用户接口获取到的用户信息（字段对应官方接口返回的字段）
+ * 这里是当前最新的qq互联的api字段封装
  * @author Randy
  * Created: 2019年1月17日
  */
