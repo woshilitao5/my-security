@@ -27,8 +27,14 @@ public class MyConstraintValidator implements ConstraintValidator<MyConstraint, 
 	public boolean isValid(String value, ConstraintValidatorContext context) {
 		if(value == null)
 			return false;
+		System.out.println("value===="+value);
 		//可以做任何事情，包括调用service来从数据库获取数据
-		List<User> user = userService.findByUserName(value);
+		List<User> user = null;
+		try {
+			user = userService.findByUserName(value);
+		}catch(NullPointerException ex) {
+//			ex.printStackTrace();
+		}
 		if(user != null && user.size()>0)
 			return false;	//数据库已存在就表示 校验失败
 		else

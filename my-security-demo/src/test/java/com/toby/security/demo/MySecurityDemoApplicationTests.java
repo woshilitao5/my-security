@@ -101,8 +101,10 @@ public class MySecurityDemoApplicationTests {
 
 	@Test
 	public void whenCreateUserSuccess() throws Exception {// 测试创建用户是否成功
+		Date date = new Date();
 		// 模拟一个json字符串（可以通过前面的测试用例的输出复制一个json来用），这里注意不要传id，因为新增时还没ID
-		String requestBody = "{\"userName\":\"user12\",\"password\":\"123\",\"rolename\":\"user\"}";
+		String requestBody = "{\"userName\":\"user12\",\"password\":\"123\",\"rolename\":\"user\",\birthDay\":"
+				+ date.getTime() + "}";
 		String result = mockMvc.perform(post("/user").contentType(MediaType.APPLICATION_JSON_UTF8).content(requestBody)// 直接param来设置参数，控制器不用@RequestBody也能解析，但是用content设字符串就不行
 		).andExpect(status().isOk()).andExpect(jsonPath("$.id").exists()).andReturn().getResponse()
 				.getContentAsString(); // 保存成功后要有ID
