@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
+/**
+ * Demo启动文档
+ * 
+ * @author Toby.li
+ */
 @SpringBootApplication
 @ComponentScan(basePackages="com.toby.security")	//保证被引用的子模块的组件也能被正常扫描，否则无法用来注入
 @EnableSwagger2	//启用Swagger2文档
