@@ -4,3 +4,4 @@
 搭建好分布式GitLab环境
 
 woshilitao22修改
+联系方式：Toby.li@163.com
